@@ -1,0 +1,112 @@
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import { FaLinkedin, FaGithub, FaEnvelope, FaDownload } from "react-icons/fa";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
+const projects = [
+  {
+    title: "Student Administration System",
+    description: "A system to manage student records efficiently.",
+    link: "#",
+  },
+  {
+    title: "Exploratory Data Analysis",
+    description: "Data visualization and insights using R.",
+    link: "https://github.com/Lwazicekiso/Exploraratory-Data-Analysis",
+  },
+  {
+    title: "Portfolio Website",
+    description: "Personal portfolio built with React and Tailwind.",
+    link: "#",
+  },
+];
+
+const technologies = ["React", "C#", "ASP.NET", "SQL", "Python", "R"];
+
+const responsive = {
+  superLargeDesktop: { breakpoint: { max: 4000, min: 1024 }, items: 3 },
+  desktop: { breakpoint: { max: 1024, min: 768 }, items: 2 },
+  tablet: { breakpoint: { max: 768, min: 464 }, items: 1 },
+  mobile: { breakpoint: { max: 464, min: 0 }, items: 1 },
+};
+
+export default function Portfolio() {
+  return (
+    <div className="bg-gray-900 text-white min-h-screen p-6 flex flex-col items-center">
+      <motion.h1
+        className="text-4xl font-bold mb-4 text-center"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        Lwazi Cekiso - Full Stack Developer
+      </motion.h1>
+      <p className="text-lg text-gray-400 mb-6 text-center max-w-2xl">
+        Passionate about software development, system analysis, UI/UX design, and data analysis.
+      </p>
+      
+      <div className="flex gap-4 mb-8">
+        <a href="https://www.linkedin.com/in/lwazi-cekiso" target="_blank">
+          <FaLinkedin className="text-3xl hover:text-blue-500 transition duration-300" />
+        </a>
+        <a href="https://github.com/Lwazicekiso" target="_blank">
+          <FaGithub className="text-3xl hover:text-gray-400 transition duration-300" />
+        </a>
+        <a href="mailto:your.email@example.com">
+          <FaEnvelope className="text-3xl hover:text-red-500 transition duration-300" />
+        </a>
+        <a href="/path-to-resume.pdf" download>
+          <FaDownload className="text-3xl hover:text-green-500 transition duration-300" />
+        </a>
+      </div>
+      
+      <Carousel responsive={responsive} className="mb-8 max-w-2xl">
+        {technologies.map((tech, index) => (
+          <div key={index} className="bg-gray-800 p-3 rounded-xl text-center shadow-md">
+            <p className="text-lg font-semibold">{tech}</p>
+          </div>
+        ))}
+      </Carousel>
+      
+      <motion.div
+        className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+      >
+        {projects.map((project, index) => (
+          <motion.div
+            key={index}
+            whileHover={{ scale: 1.05 }}
+            className="bg-gray-800 p-4 rounded-2xl shadow-lg"
+          >
+            <Card>
+              <CardContent>
+                <h2 className="text-xl font-semibold">{project.title}</h2>
+                <p className="text-gray-400 mt-2">{project.description}</p>
+                <a href={project.link} target="_blank">
+                  <Button className="mt-4 bg-blue-600 hover:bg-blue-700 transition duration-300">
+                    View Project
+                  </Button>
+                </a>
+              </CardContent>
+            </Card>
+          </motion.div>
+        ))}
+      </motion.div>
+      
+      <div className="mt-10 max-w-md w-full">
+        <h2 className="text-2xl font-bold mb-4 text-center">Contact Me</h2>
+        <form className="bg-gray-800 p-6 rounded-xl shadow-md">
+          <input type="text" placeholder="Your Name" className="w-full p-2 mb-4 rounded bg-gray-700 text-white" />
+          <input type="email" placeholder="Your Email" className="w-full p-2 mb-4 rounded bg-gray-700 text-white" />
+          <textarea placeholder="Your Message" className="w-full p-2 mb-4 rounded bg-gray-700 text-white" rows="4"></textarea>
+          <Button className="w-full bg-blue-600 hover:bg-blue-700 transition duration-300">Send Message</Button>
+        </form>
+      </div>
+    </div>
+  );
+}
