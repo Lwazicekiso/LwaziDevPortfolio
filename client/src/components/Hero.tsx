@@ -25,19 +25,19 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-2xl text-blue-400 font-medium mb-2">Hello, I'm</h2>
+          <h2 className="text-2xl text-blue-400 font-medium mb-2">Hello, I'm <span className="hidden">a</span></h2>
           <div className="h-24 md:h-24 w-full">
             <TypeAnimation
               sequence={[
                 'Lwazi Cekiso',
                 2000,
-                'a Fullstack Developer',
+                'Fullstack Developer',
                 2000,
-                'a UX Designer',
+                'UX Designer',
                 2000,
-                'a Software Engineer',
+                'Software Engineer',
                 2000,
-                'a Tech Enthusiast',
+                'Tech Enthusiast',
                 2000,
               ]}
               wrapper="h1"
