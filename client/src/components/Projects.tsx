@@ -29,8 +29,12 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 px-4 bg-gradient-to-b from-gray-900 to-gray-950">
-      <div className="max-w-6xl mx-auto">
+    <section id="projects" className="py-20 px-4 bg-gradient-to-b from-gray-900 to-gray-950 relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute top-40 -right-40 w-80 h-80 bg-blue-500/5 rounded-full blur-3xl animate-spin-slow"></div>
+      <div className="absolute bottom-20 -left-40 w-80 h-80 bg-indigo-500/5 rounded-full blur-3xl animate-spin-slow" style={{ animationDirection: 'reverse' }}></div>
+      
+      <div className="max-w-6xl mx-auto relative z-10">
         <motion.div 
           className="text-center mb-16"
           initial={{ opacity: 0 }}
@@ -39,7 +43,7 @@ const Projects = () => {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-500">Featured Projects</h2>
-          <div className="h-1 w-20 bg-blue-500 mx-auto mb-6 rounded-full"></div>
+          <div className="h-1 w-20 bg-blue-500 mx-auto mb-6 rounded-full border-glow"></div>
           <p className="text-gray-400 max-w-2xl mx-auto">
             Here are some of the projects I've worked on that showcase my skills and expertise in full-stack development.
           </p>
@@ -49,39 +53,65 @@ const Projects = () => {
           {projects.map((project, i) => (
             <motion.div 
               key={i}
-              className="backdrop-blur-md bg-gray-800/50 border border-gray-700/50 rounded-xl overflow-hidden shadow-lg group transition-all duration-300"
+              className="backdrop-blur-md bg-gray-800/50 border border-gray-700/50 rounded-xl overflow-hidden shadow-lg group transition-all duration-300 shine-effect"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 * i }}
-              whileHover={{ y: -8 }}
+              whileHover={{ y: -8, boxShadow: '0 15px 30px rgba(0, 0, 0, 0.4)' }}
             >
               <div className="h-48 bg-gradient-to-br from-blue-700 to-indigo-900 relative overflow-hidden">
-                <img 
+                <motion.img 
                   src={project.image}
                   alt={project.title} 
-                  className="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-all duration-300 group-hover:scale-105"
+                  className="w-full h-full object-cover opacity-70 transition-all duration-300"
+                  whileHover={{ scale: 1.1, opacity: 1 }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
-                <h3 className="absolute bottom-4 left-4 text-xl font-bold">{project.title}</h3>
+                <motion.h3 
+                  initial={{ y: 20, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ delay: 0.2 + (i * 0.1) }}
+                  className="absolute bottom-4 left-4 text-xl font-bold"
+                >
+                  {project.title}
+                </motion.h3>
               </div>
               <CardContent className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, j) => (
-                    <span key={j} className="text-xs bg-blue-500/20 text-blue-300 px-2 py-1 rounded">{tag}</span>
+                    <motion.span 
+                      key={j} 
+                      className="text-xs bg-blue-500/20 text-blue-300 px-2 py-1 rounded-md"
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: 0.3 + (j * 0.1) }}
+                      whileHover={{ backgroundColor: 'rgba(59, 130, 246, 0.4)' }}
+                    >
+                      {tag}
+                    </motion.span>
                   ))}
                 </div>
                 <p className="text-gray-400 mb-6">{project.description}</p>
                 <div className="flex items-center justify-between">
-                  <a href="#" className="text-blue-400 hover:text-blue-300 flex items-center gap-1 text-sm">
+                  <motion.a 
+                    href="#" 
+                    className="text-blue-400 flex items-center gap-1 text-sm"
+                    whileHover={{ color: '#93c5fd', x: 3 }}
+                  >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     Details
-                  </a>
-                  <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700">
-                    <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
-                  </Button>
+                  </motion.a>
+                  <motion.div
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 transition-all duration-300">
+                      <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
+                    </Button>
+                  </motion.div>
                 </div>
               </CardContent>
             </motion.div>
