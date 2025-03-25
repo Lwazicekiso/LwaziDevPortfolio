@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { FaGithub, FaLinkedin, FaEnvelope, FaFileDownload } from "react-icons/fa";
+import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
   return (
@@ -25,9 +26,28 @@ const Hero = () => {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-2xl text-blue-400 font-medium mb-2">Hello, I'm</h2>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-500">Lwazi Cekiso</h1>
+          <div className="h-24 md:h-20">
+            <TypeAnimation
+              sequence={[
+                'Lwazi Cekiso',
+                2000,
+                'a Fullstack Developer',
+                2000,
+                'a UX Designer',
+                2000,
+                'a Software Engineer',
+                2000,
+                'a Tech Enthusiast',
+                2000,
+              ]}
+              wrapper="h1"
+              speed={50}
+              className="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-500"
+              repeat={Infinity}
+              cursor={true}
+            />
+          </div>
           <div className="h-1 w-20 bg-blue-500 mb-6 rounded-full hidden md:block"></div>
-          <h3 className="text-2xl font-medium text-gray-300 mb-6">Full Stack Developer</h3>
           <p className="text-gray-400 max-w-xl mb-8 leading-relaxed">
             Honours student in Informatics with a strong background in full-stack development, system analysis, and data-driven decision-making. Passionate about leveraging technology to solve real-world problems, optimizing processes, and ensuring operational efficiency.
           </p>
