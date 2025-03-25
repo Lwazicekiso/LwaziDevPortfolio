@@ -31,13 +31,13 @@ const Hero = () => {
               sequence={[
                 'Lwazi Cekiso',
                 2000,
-                'Fullstack Developer',
+                'A Fullstack Developer',
                 2000,
-                'UX Designer',
+                'A UX Designer',
                 2000,
-                'Software Engineer',
+                'An Aspiring Software Engineer',
                 2000,
-                'Tech Enthusiast',
+                'A Tech Enthusiast',
                 2000,
               ]}
               wrapper="h1"
@@ -45,6 +45,7 @@ const Hero = () => {
               className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-500"
               repeat={Infinity}
               cursor={true}
+
             />
           </div>
           <div className="h-1 w-20 bg-blue-500 mb-6 rounded-full hidden md:block"></div>
@@ -52,10 +53,10 @@ const Hero = () => {
             Honours student in Informatics with a strong background in full-stack development, system analysis, and data-driven decision-making. Passionate about leveraging technology to solve real-world problems, optimizing processes, and ensuring operational efficiency.
           </p>
           <div className="flex gap-4">
-            <Button asChild className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg transition-all shadow-lg">
+            <Button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg transition-all shadow-lg">
               <a href="#projects">View Projects</a>
             </Button>
-            <Button asChild variant="outline" className="px-6 py-3 border border-gray-700 hover:border-blue-500 rounded-lg transition-all">
+            <Button variant="outline" className="px-6 py-3 border border-gray-700 hover:border-blue-500 rounded-lg transition-all">
               <a href="#contact">Contact Me</a>
             </Button>
           </div>
@@ -84,8 +85,9 @@ const Hero = () => {
             >
               <FaEnvelope size={24} />
             </motion.a>
+
             <motion.a 
-              href="/resume.pdf" 
+              href="/InternshipCV.pdf" 
               download
               whileHover={{ scale: 1.1 }}
               className="text-gray-400 hover:text-blue-400 transition-colors"

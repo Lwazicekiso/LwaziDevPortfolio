@@ -31,7 +31,6 @@ const itemVariants = {
 
 const Contact = () => {
   const [isHovering, setIsHovering] = useState(false);
-  
   return (
     <section id="contact" className="py-20 px-4 bg-gray-950 relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-blue-900/10 via-gray-950 to-gray-950 -z-10"></div>
@@ -83,6 +82,7 @@ const Contact = () => {
                 >
                   <FaEnvelope className="h-6 w-6 text-blue-400" />
                 </motion.div>
+
                 <div>
                   <h4 className="font-medium text-lg">Email</h4>
                   <a 
@@ -107,7 +107,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-medium text-lg">Phone</h4>
                   <a 
-                    href="tel:+27661221850" 
+                    href="tel:+27681221850" 
                     className="text-blue-400 hover:text-blue-300 transition-colors"
                   >
                     +27 66 122 1850
@@ -176,7 +176,7 @@ const Contact = () => {
                 <FaEnvelope className="h-6 w-6" />
               </motion.a>
               <motion.a 
-                href="/resume.pdf" 
+                href="/InternshipCV.pdf" 
                 download
                 className="bg-blue-500/20 p-3 rounded-lg text-blue-400 hover:bg-blue-500/30 transition-all"
                 whileHover={{ 
