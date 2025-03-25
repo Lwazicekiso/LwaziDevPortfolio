@@ -26,7 +26,7 @@ const Hero = () => {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-2xl text-blue-400 font-medium mb-2">Hello, I'm</h2>
-          <div className="h-24 md:h-20">
+          <div className="h-24 md:h-24 w-full">
             <TypeAnimation
               sequence={[
                 'Lwazi Cekiso',
@@ -42,7 +42,7 @@ const Hero = () => {
               ]}
               wrapper="h1"
               speed={50}
-              className="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-500"
+              className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-500"
               repeat={Infinity}
               cursor={true}
             />
