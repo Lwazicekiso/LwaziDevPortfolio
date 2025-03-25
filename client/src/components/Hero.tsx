@@ -103,7 +103,7 @@ const Hero = () => {
         >
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-blue-600 to-indigo-600 p-1 shadow-lg shadow-blue-500/20">
             <img 
-              src="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80" 
+              src="/lwazi-profile.jpg" 
               alt="Lwazi Cekiso" 
               className="rounded-full w-full h-full object-cover"
             />
