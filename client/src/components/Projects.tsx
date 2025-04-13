@@ -9,21 +9,25 @@ const projects = [
     description: "A system to manage student applications and records, enhancing administrative efficiency.",
     image: "https://images.unsplash.com/photo-1623479322729-28b25c16b011?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
     tags: ["React", "SQL", "PocketBase"],
-    link: "#"
+    detailLink:"https://github.com/Lwazicekiso/Student-Admin-Portal/tree/main",
+    link: "https://github.com/Lwazicekiso/Student-Admin-Portal/tree/main"
   },
   {
     title: "Exploratory Data Analysis",
     description: "Data visualization and insights using R, analyzing customer purchase trends and Olympic data.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
     tags: ["R", "ggplot2", "tidyverse"],
+    detailLink:"https://github.com/Lwazicekiso/Exploraratory-Data-Analysis",
     link: "https://github.com/Lwazicekiso/Exploraratory-Data-Analysis"
   },
+
   {
     title: "Portfolio Website",
     description: "Personal portfolio built with React and Tailwind CSS, featuring animations and responsive design.",
     image: "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
     tags: ["React", "Tailwind CSS", "Framer Motion"],
-    link: "#"
+    detailLink:"https://github.com/Lwazicekiso/LwaziDevPortfolio",
+    link: "https://github.com/Lwazicekiso/LwaziDevPortfolio"
   }
 ];
 
@@ -99,10 +103,7 @@ const Projects = () => {
                     className="text-blue-400 flex items-center gap-1 text-sm"
                     whileHover={{ color: '#93c5fd', x: 3 }}
                   >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    Details
+
                   </motion.a>
                   <motion.div
                     whileHover={{ scale: 1.05 }}
