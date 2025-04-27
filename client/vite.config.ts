@@ -13,5 +13,9 @@ export default defineConfig({
   build: {
     outDir: "dist",
     emptyOutDir: true,
+    rollupOptions: {
+        external: ['@tanstack/react-query'],
+      },
   },
 });
+
