@@ -15,8 +15,7 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       external: [
-        // Remove @radix-ui/react-toast from external
-        'class-variance-authority' 
+        // Remove class-variance-authority from external
       ],
     },
   },
