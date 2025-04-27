@@ -7,15 +7,16 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
-      "@shared": path.resolve(__dirname, "../shared"),
+      "@shared": path.resolve(__dirname, "../shared"), // Ensure this is correct relative path
     },
   },
   build: {
     outDir: "dist",
     emptyOutDir: true,
     rollupOptions: {
-        external: ['@tanstack/react-query'],
-      },
+      external: [
+        '@tanstack/react-query', 
+        '@radix-ui/react-toast',  ],
+    },
   },
 });
-
