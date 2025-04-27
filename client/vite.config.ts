@@ -15,8 +15,10 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       external: [
-        '@tanstack/react-query', 
-        '@radix-ui/react-toast','class-variance-authority' ],
+        // Remove @tanstack/react-query from external
+        '@radix-ui/react-toast', 
+        'class-variance-authority' 
+      ],
     },
   },
 });
