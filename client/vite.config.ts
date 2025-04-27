@@ -16,7 +16,7 @@ export default defineConfig({
     rollupOptions: {
       external: [
         '@tanstack/react-query', 
-        '@radix-ui/react-toast',  ],
+        '@radix-ui/react-toast','class-variance-authority' ],
     },
   },
 });
