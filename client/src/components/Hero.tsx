@@ -46,8 +46,7 @@ const Hero = () => {
           </div>
           <div className="h-1 w-20 bg-blue-500 mb-6 rounded-full hidden md:block" />
           <p className="text-gray-300 max-w-xl mb-8 leading-relaxed">
-            Honours student in Informatics with a strong background in full-stack development, system analysis, and data analysis. Passionate about leveraging technology to solve real-world problems, optimizing processes, and ensuring operational efficiency.
-          </p>
+          Honours student in Informatics with a strong background in software development, system analysis, and data analysis. Passionate about leveraging technology to solve real world challenges, I thrive in dynamic, problem solving environments and am eager to apply my analytical and technical skills in a hands on internship.          </p>
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
@@ -89,7 +88,7 @@ const Hero = () => {
               <FaEnvelope size={24} />
             </motion.a>
             <motion.a
-              href="/InternshipCV.pdf"
+              href="/MasterCV.pdf"
               download
               whileHover={{ scale: 1.1 }}
               className="text-gray-400 hover:text-blue-400 transition-colors"

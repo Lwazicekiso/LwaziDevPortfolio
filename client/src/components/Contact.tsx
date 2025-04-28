@@ -141,7 +141,7 @@ const Contact = () => {
               },
               {
                 icon: FaFileDownload,
-                link: "/InternshipCV.pdf",
+                link: "/MasterCV.pdf",
                 label: "Resume",
                 download: true,
               },
