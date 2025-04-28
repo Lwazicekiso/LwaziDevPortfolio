@@ -34,7 +34,7 @@ const Hero = () => {
               sequence={[
                 "Lwazi Cekiso", 2000,
                 "A Tech Enthusiast", 2000,
-                "A Fullstack Developer", 2000,
+                "A Software Developer", 2000,
                 "An Aspiring SAP Technical Consultant ", 2000,
               ]}
               wrapper="h1"
