@@ -46,7 +46,7 @@ const Hero = () => {
           </div>
           <div className="h-1 w-20 bg-blue-500 mb-6 rounded-full hidden md:block" />
           <p className="text-gray-300 max-w-xl mb-8 leading-relaxed">
-            Honours student in Informatics with a strong background in full-stack development, system analysis, and data-driven decision-making. Passionate about leveraging technology to solve real-world problems, optimizing processes, and ensuring operational efficiency.
+            Honours student in Informatics with a strong background in full-stack development, system analysis, and data analysis. Passionate about leveraging technology to solve real-world problems, optimizing processes, and ensuring operational efficiency.
           </p>
 
           {/* Buttons */}
