@@ -33,10 +33,9 @@ const Hero = () => {
             <TypeAnimation
               sequence={[
                 "Lwazi Cekiso", 2000,
-                "A Fullstack Developer", 2000,
-                "A UX Designer", 2000,
-                "An Aspiring Software Engineer", 2000,
                 "A Tech Enthusiast", 2000,
+                "A Fullstack Developer", 2000,
+                "An Aspiring SAP Technical Consultant ", 2000,
               ]}
               wrapper="h1"
               speed={50}
@@ -52,14 +51,14 @@ const Hero = () => {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button asChild className="w-full sm:w-auto">
+            <Button asChild className="bg-blue-600 hover:bg-blue-700 transition-all duration-300">
               <a href="#projects" className="block px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-center transition-all shadow-lg">
                 View Projects
               </a>
             </Button>
             <Button asChild variant="outline" className="w-full sm:w-auto">
-              <a href="#contact" className="block px-6 py-3 border border-gray-700 hover:border-blue-500 rounded-lg text-center transition-all">
-                Contact Me
+            <a href="#contact" className="bg-gray-800 hover:bg-blue-700 transition-all duration-300">
+            Contact Me
               </a>
             </Button>
           </div>

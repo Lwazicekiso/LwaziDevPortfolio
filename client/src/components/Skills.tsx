@@ -9,8 +9,8 @@ const skillCategories = [
     skills: ["C#", "ASP.NET", "React", "Python", "SQL", "R"]
   },
   {
-    title: "Software Development",
-    skills: ["Full-stack development", "System analysis", "UML diagrams", "UI/UX design", "SDLC"]
+    title: "Competencies",
+    skills: ["Contionous Development", "System analysis", "UML diagrams", "UI/UX design", "SDLC"]
   },
   {
     title: "Data Analysis",
@@ -18,7 +18,7 @@ const skillCategories = [
   },
   {
     title: "Tools & Platforms",
-    skills: ["Microsoft Office", "PocketBase", "Figma", "API Integration", "Git/GitHub"]
+    skills: ["Microsoft Office","Linux","Figma", "API Integration", "Git/GitHub", "Visual Paradigm"]
   }
 ];
 

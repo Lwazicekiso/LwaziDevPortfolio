@@ -18,7 +18,7 @@ const projects = [
     title: "Network Reconnaissance Tool",
     description: "Designed and developed a Python-based Network Reconnaissance Tool for automated scanning and information gathering on internal and external networks",
     image: "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    tags: ["Python", "Scanning" ],
+    tags: ["Python", "Linux", "Network Scanning","Vulnerability Scanning", ],
     detailLink:"https://github.com/Lwazicekiso/Tracescope",
     link: "https://github.com/Lwazicekiso/Tracescope"
   },
@@ -50,7 +50,7 @@ const Projects = () => {
           <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-500">Featured Projects</h2>
           <div className="h-1 w-20 bg-blue-500 mx-auto mb-6 rounded-full border-glow"></div>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Here are some of the projects I've worked on that showcase my skills and expertise in software development.
+            Here are some of the projects I've worked on that showcase my skills. 
           </p>
         </motion.div>
 
