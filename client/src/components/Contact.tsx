@@ -142,7 +142,7 @@ const Contact = () => {
               {
                 icon: FaFileDownload,
                 link: "/InternshipCV.pdf",
-                label: "Download Resume",
+                label: "Resume",
                 download: true,
               },
             ].map(({ icon: Icon, link, label, download }) => (
@@ -156,6 +156,7 @@ const Contact = () => {
                 aria-label={label}
               >
                 <Icon className="h-6 w-6" />
+                <span className="text-xs mt-2">{label}</span>
               </motion.a>
             ))}
           </motion.div>
