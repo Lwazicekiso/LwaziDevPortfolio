@@ -12,6 +12,16 @@ const projects = [
     detailLink:"https://github.com/Lwazicekiso/Student-Admin-Portal/tree/main",
     link: "https://github.com/Lwazicekiso/Student-Admin-Portal/tree/main"
   },
+
+
+  {
+    title: "Network Reconnaissance Tool",
+    description: "Designed and developed a Python-based Network Reconnaissance Tool for automated scanning and information gathering on internal and external networks",
+    image: "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    tags: ["Python", "Scanning" ],
+    detailLink:"https://github.com/Lwazicekiso/Tracescope",
+    link: "https://github.com/Lwazicekiso/Tracescope"
+  },
   {
     title: "Exploratory Data Analysis",
     description: "Data visualization and insights using R, analyzing customer purchase trends and Olympic data.",
@@ -19,15 +29,6 @@ const projects = [
     tags: ["R", "ggplot2", "tidyverse"],
     detailLink:"https://github.com/Lwazicekiso/Exploraratory-Data-Analysis",
     link: "https://github.com/Lwazicekiso/Exploraratory-Data-Analysis"
-  },
-
-  {
-    title: "Portfolio Website",
-    description: "Personal portfolio built with React and Tailwind CSS, featuring animations and responsive design.",
-    image: "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    tags: ["React", "Tailwind CSS", "Framer Motion"],
-    detailLink:"https://github.com/Lwazicekiso/LwaziDevPortfolio",
-    link: "https://github.com/Lwazicekiso/LwaziDevPortfolio"
   }
 ];
 
@@ -49,7 +50,7 @@ const Projects = () => {
           <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-500">Featured Projects</h2>
           <div className="h-1 w-20 bg-blue-500 mx-auto mb-6 rounded-full border-glow"></div>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Here are some of the projects I've worked on that showcase my skills and expertise in full-stack development.
+            Here are some of the projects I've worked on that showcase my skills and expertise in software development.
           </p>
         </motion.div>
 
