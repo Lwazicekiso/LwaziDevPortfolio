@@ -35,8 +35,7 @@ const Hero = () => {
                 "Lwazi Cekiso", 2000,
                 "A Tech Enthusiast", 2000,
                 'A Fullstack Developer',  2000,
-                'A UX Designer',2000,
-                'Software Developer',2000,
+                'An Aspiring Cyber Analyst',2000,
               ]}
               wrapper="h1"
               speed={50}
