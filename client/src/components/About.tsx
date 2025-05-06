@@ -48,47 +48,6 @@ const About = () => {
               I’m excited to bring my toolkit and my drive to learn even more to a software engineering team where building impactful, efficient solutions is the daily norm.
             </p>
           </motion.div>
-
-          <motion.div 
-            className="backdrop-blur-md bg-gray-800/50 border border-gray-700/50 rounded-2xl p-8 shadow-lg"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            <h3 className="text-2xl font-bold mb-6">Experience & Education</h3>
-            
-            <div className="mb-6">
-              <div className="flex items-start mb-2">
-                <div className="bg-blue-500 rounded-full w-3 h-3 mt-1.5 mr-3"></div>
-                <div>
-                  <h4 className="font-semibold text-lg">Sanipippe Engineering Services</h4>
-                  <p className="text-gray-400">General Assistant | Nov 2024 - Feb 2025</p>
-                </div>
-              </div>
-              <p className="text-gray-300 pl-6">Assisted in risk mitigation, invoice processing, and contributed to project planning and cost control.</p>
-            </div>
-            
-            <div className="mb-6">
-              <div className="flex items-start mb-2">
-                <div className="bg-blue-500 rounded-full w-3 h-3 mt-1.5 mr-3"></div>
-                <div>
-                  <h4 className="font-semibold text-lg">Bachelor of Informatics Honours</h4>
-                  <p className="text-gray-400">Stellenbosch University | 2025 (In Progress)</p>
-                </div>
-              </div>
-            </div>
-            
-            <div>
-              <div className="flex items-start mb-2">
-                <div className="bg-blue-500 rounded-full w-3 h-3 mt-1.5 mr-3"></div>
-                <div>
-                  <h4 className="font-semibold text-lg">BA Humanities (Informatics Major)</h4>
-                  <p className="text-gray-400">Stellenbosch University | 2022-2024</p>
-                </div>
-              </div>
-            </div>
-          </motion.div>
         </div>
       </div>
     </section>
