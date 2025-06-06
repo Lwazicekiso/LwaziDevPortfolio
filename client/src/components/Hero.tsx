@@ -35,7 +35,7 @@ const Hero = () => {
                 "Lwazi Cekiso", 2000,
                 "A Tech Enthusiast", 2000,
                 "A Software Developer", 2000,
-                "An Aspiring SAP Technical Consultant ", 2000,
+                "An Aspiring Cybersecurity", 2000,
               ]}
               wrapper="h1"
               speed={50}
@@ -46,7 +46,7 @@ const Hero = () => {
           </div>
           <div className="h-1 w-20 bg-blue-500 mb-6 rounded-full hidden md:block" />
           <p className="text-gray-300 max-w-xl mb-8 leading-relaxed">
-        An Informatics Honours student at Stellenbosch University, with a background in full‑stack development and Cyber Security. My interdisciplinary skill set enables me to design and deliver secure, scalable solutions while ensuring robust controls and compliance.
+          An Informatics Honours student at Stellenbosch University, with a background in full‑stack development and Cyber Security. My interdisciplinary skill set enables me to design and deliver secure, scalable solutions while ensuring robust controls and compliance.
               </p>
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
