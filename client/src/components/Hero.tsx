@@ -28,14 +28,14 @@ const Hero = () => {
       >
         {/* Text Section */}
         <div className="md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
-          <h2 className="text-2xl text-blue-400 font-medium mb-2">Hi there, I&apos;m <span className="hidden">a</span></h2>
+          <h2 className="text-2xl text-blue-400 font-medium mb-2">Hello, I&apos;m <span className="hidden">a</span></h2>
           <div className="h-24 w-full">
             <TypeAnimation
               sequence={[
                 "Lwazi Cekiso", 2000,
                 "A Tech Enthusiast", 2000,
-                'A Fullstack Developer',  2000,
-                'An Aspiring Cyber Analyst',2000,
+                "A Software Developer", 2000,
+                "An Aspiring SAP Technical Consultant ", 2000,
               ]}
               wrapper="h1"
               speed={50}
@@ -46,7 +46,7 @@ const Hero = () => {
           </div>
           <div className="h-1 w-20 bg-blue-500 mb-6 rounded-full hidden md:block" />
           <p className="text-gray-300 max-w-xl mb-8 leading-relaxed">
-          Honours student in Informatics with a strong background in software development, system analysis, and data analysis. Passionate about leveraging technology to solve real world challenges, I thrive in dynamic, problem solving environments and am eager to apply my analytical and technical skills in a hands on internship.          </p>
+        An Informatics Honours student at Stellenbosch University, with a background in full‑stack development and Cyber Security. My interdisciplinary skill set enables me to design and deliver secure, scalable solutions while ensuring robust controls and compliance.
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
