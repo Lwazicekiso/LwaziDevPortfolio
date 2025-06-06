@@ -47,7 +47,7 @@ const Hero = () => {
           <div className="h-1 w-20 bg-blue-500 mb-6 rounded-full hidden md:block" />
           <p className="text-gray-300 max-w-xl mb-8 leading-relaxed">
         An Informatics Honours student at Stellenbosch University, with a background in full‑stack development and Cyber Security. My interdisciplinary skill set enables me to design and deliver secure, scalable solutions while ensuring robust controls and compliance.
-
+              </p>
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
             <Button asChild className="bg-blue-600 hover:bg-blue-700 transition-all duration-300">
