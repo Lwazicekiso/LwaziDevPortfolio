@@ -49,19 +49,6 @@ const About = () => {
                 <strong>Collaboration & Communication:</strong> Experienced in bridging technical and non-technical teams and fostering continuous learning.
               </li>
             </ul>
-
-            <h4 className="text-xl font-semibold text-blue-400 mb-4">Notable Projects</h4>
-            <ul className="list-disc list-inside text-gray-300 space-y-2">
-              <li>
-                <strong>Student Administration System:</strong> Architected a full‑stack React + PocketBase platform for efficient application processing and record management.
-              </li>
-              <li>
-                <strong>Network Reconnaissance Tool:</strong> Built a Python toolkit integrating WHOIS, DNS enumeration, Nmap, and CVE lookups to aid pentesting.
-              </li>
-              <li>
-                <strong>Network Security Simulation:</strong> Created a simulated enterprise network (GNS3) with pfSense/OPNsense firewall and tested it using tools like Ettercap, hping3, and Wireshark.
-              </li>
-            </ul>
           </motion.div>
 
           <motion.div 
