@@ -26,27 +26,42 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h3 className="text-2xl font-bold mb-6">My Journey</h3>
+            <h3 className="text-2xl font-bold mb-6">Profile & Competencies</h3>
             <p className="text-gray-300 leading-relaxed mb-6">
-            With a passion for problem solving I’ve always been the sort of person who sees a manual process or a pile of data and thinks, “There’s got to be a way to automate this.” What started with building static web apps during my BA in Humanities (Informatics Major) has evolved into a full-blown passion for designing and shipping tools that make teams more efficient and decisions more data driven.
+              An Informatics Honours student at Stellenbosch University, with a background in full‑stack development and Cyber Security. My interdisciplinary skill set enables me to design and deliver secure, scalable solutions while ensuring robust controls and compliance.
+            </p>
 
-</p>
-            <ul className="list-disc list-inside text-gray-300 mb-6">
+            <h4 className="text-xl font-semibold text-blue-400 mb-4">Core Competencies</h4>
+            <ul className="list-disc list-inside text-gray-300 mb-6 space-y-2">
               <li>
-                <strong>Architected &amp; Deployed</strong> a Student Administration System (React, PocketBase, SQL) that <strong>cut record-keeping time by 50%</strong>, driving every phase of the SDLC from UML/BRDs through to secure React Admin back-ends.
+                <strong>Software Development:</strong> Proficient in C#, ASP .NET Core, React, JavaScript and SQL. Experienced in full SDLC from UML and wireframing to optimization.
               </li>
               <li>
-                <strong>Built</strong> a Python-based Network Reconnaissance Tool—integrating WHOIS lookups, DNS enumeration, Nmap scans, and JSON/.txt reporting—to <strong>automate critical information gathering</strong> for security assessments.
+                <strong>Cybersecurity:</strong> Skilled in threat modeling, detection, and ethical info gathering using Kali Linux, Nmap, Netcat, and related tooling.
               </li>
               <li>
-                <strong>Turned</strong> raw datasets into compelling visual stories in R (tidyverse/ggplot2), uncovering customer and Olympic Games trends that informed stakeholder strategy.
+                <strong>Data Analysis & Visualization:</strong> Python (Pandas, NumPy) and R (tidyverse, ggplot2) for extracting insights and communicating results.
+              </li>
+              <li>
+                <strong>Analytical Problem‑Solving:</strong> Able to evaluate trade-offs and implement pragmatic solutions under tight deadlines.
+              </li>
+              <li>
+                <strong>Collaboration & Communication:</strong> Experienced in bridging technical and non-technical teams and fostering continuous learning.
               </li>
             </ul>
-            <p className="text-gray-300 leading-relaxed">
-              With hands-on expertise in <strong>C#</strong>, <strong>Python</strong>, <strong>JavaScript</strong>, <strong>SQL</strong>, <strong>R</strong>, and <strong>Git</strong>, 
-              plus exposure to light penetration-testing labs, I thrive in fast-paced, collaborative environments that demand rapid prototyping, continuous learning, and robust problem-solving. 
-              I’m excited to bring my toolkit and my drive to learn even more to a software engineering team where building impactful, efficient solutions is the daily norm.
-            </p>
+
+            <h4 className="text-xl font-semibold text-blue-400 mb-4">Notable Projects</h4>
+            <ul className="list-disc list-inside text-gray-300 space-y-2">
+              <li>
+                <strong>Student Administration System:</strong> Architected a full‑stack React + PocketBase platform for efficient application processing and record management.
+              </li>
+              <li>
+                <strong>Network Reconnaissance Tool:</strong> Built a Python toolkit integrating WHOIS, DNS enumeration, Nmap, and CVE lookups to aid pentesting.
+              </li>
+              <li>
+                <strong>Network Security Simulation:</strong> Created a simulated enterprise network (GNS3) with pfSense/OPNsense firewall and tested it using tools like Ettercap, hping3, and Wireshark.
+              </li>
+            </ul>
           </motion.div>
 
           <motion.div 
