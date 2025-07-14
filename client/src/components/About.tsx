@@ -37,7 +37,7 @@ const About = () => {
                 <strong>Software Development:</strong> Proficient in C#, ASP .NET Core, React, JavaScript and SQL. Experienced in full SDLC from UML and wireframing to optimization.
               </li>
               <li>
-                <strong>Cybersecurity:</strong> Skilled in threat modeling, detection, and ethical info gathering using Kali Linux, Nmap, Netcat, and related tooling.
+                <strong>Cybersecurity:</strong> •	Threat Modelling · Vulnerability Management · Information Gathering · Control Testing (NIST).
               </li>
               <li>
                 <strong>Data Analysis & Visualization:</strong> Python (Pandas, NumPy) and R (tidyverse, ggplot2) for extracting insights and communicating results.
@@ -76,17 +76,6 @@ const About = () => {
 
               </p>
             </div>
-
-            <div className="mb-6">
-              <div className="flex items-start mb-2">
-                <div className="bg-blue-500 rounded-full w-3 h-3 mt-1.5 mr-3"></div>
-                <div>
-                  <h4 className="font-semibold text-lg">Sanipippe Engineering Services</h4>
-                  <p className="text-gray-400">General Assistant | Nov 2024 - Feb 2025</p>
-                </div>
-              </div>
-              <p className="text-gray-300 pl-6">Assisted in risk mitigation, invoice processing, and contributed to project planning and cost control.</p>
-            </div>
             
             <div className="mb-6">
               <div className="flex items-start mb-2">
@@ -104,6 +93,23 @@ const About = () => {
                 <div>
                   <h4 className="font-semibold text-lg">BA Humanities (Informatics Major)</h4>
                   <p className="text-gray-400">Stellenbosch University | 2022-2024</p>
+                </div>
+              </div>
+            </div>
+              
+              <div className="flex items-start mb-2">
+                <div className="bg-blue-500 rounded-full w-3 h-3 mt-1.5 mr-3"></div>
+                <div>
+                  <h4 className="font-semibold text-lg">ISC2 Certified in Cybersecurity (CC) </h4>
+                  <p className="text-gray-400">ISC2 | 2025 </p>
+                </div>
+              </div>
+                                      <div>
+              <div className="flex items-start mb-2">
+                <div className="bg-blue-500 rounded-full w-3 h-3 mt-1.5 mr-3"></div>
+                <div>
+                  <h4 className="font-semibold text-lg">Foundational C# Certification with Microsoft </h4>
+                  <p className="text-gray-400">Microsoft | 2025 </p>
                 </div>
               </div>
             </div>
