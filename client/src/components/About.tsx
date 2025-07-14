@@ -59,7 +59,24 @@ const About = () => {
             transition={{ duration: 0.5 }}
           >
             <h3 className="text-2xl font-bold mb-6">Experience & Education</h3>
-            
+                        <div className="mb-6">
+              <div className="flex items-start mb-2">
+                <div className="bg-blue-500 rounded-full w-3 h-3 mt-1.5 mr-3"></div>
+                <div>
+                  <h4 className="font-semibold text-lg">KPMG South Africa</h4>
+                  <p className="text-gray-400">Cybersecurity Intern | June 2025 - July 2025</p>
+                </div>
+              </div>
+              <p className="text-gray-300 pl-6">
+                <ul className="list-disc list-inside space-y-2">
+                  <li>Assisted in cybersecurity audit engagements, evaluating IT controls and compliance across multiple client environments.</li>
+                  <li>Shadowed senior consultants during client interviews, gathering evidence via walkthroughs, screenshots, and documentation of control processes.</li>
+                  <li>Co-developed and presented a cybersecurity enhancement roadmap aimed at strengthening a client’s security environment to the Head of Cybersecurity at KPMG and the entire Cape Town Cybersecurity team.</li>
+                </ul>
+
+              </p>
+            </div>
+
             <div className="mb-6">
               <div className="flex items-start mb-2">
                 <div className="bg-blue-500 rounded-full w-3 h-3 mt-1.5 mr-3"></div>
