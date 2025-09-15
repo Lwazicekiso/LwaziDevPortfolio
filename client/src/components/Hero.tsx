@@ -28,14 +28,15 @@ const Hero = () => {
       >
         {/* Text Section */}
         <div className="md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
-          <h2 className="text-2xl text-blue-400 font-medium mb-2">Hello, I&apos;m <span className="hidden">a</span></h2>
+          <h2 className="text-2xl text-blue-400 font-medium mb-2">Hi there, I&apos;m <span className="hidden">a</span></h2>
           <div className="h-24 w-full">
             <TypeAnimation
               sequence={[
                 "Lwazi Cekiso", 2000,
                 "A Tech Enthusiast", 2000,
-                "A Software Developer", 2000,
-                "An Aspiring SAP Technical Consultant ", 2000,
+                'A Fullstack Developer',  2000,
+                'A UX Designer',2000,
+                'Software Developer',2000,
               ]}
               wrapper="h1"
               speed={50}
